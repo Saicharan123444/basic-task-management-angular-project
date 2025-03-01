@@ -1,0 +1,7 @@
+/* src/app/task/task.component.css */
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  

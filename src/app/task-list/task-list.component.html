@@ -1,0 +1,10 @@
+<!-- src/app/task-list/task-list.component.html -->
+
+<h2>Task List</h2>
+
+<div *ngFor="let task of tasks; let i = index">
+  <app-task [task]="task"></app-task>
+  <button (click)="toggleTaskCompletion(task)">
+    Toggle Completion
+  </button>
+</div>

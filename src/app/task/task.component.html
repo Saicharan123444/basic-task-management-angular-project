@@ -1,0 +1,10 @@
+<!-- src/app/task/task.component.html -->
+
+<div class="task">
+    <h3>{{ task?.title }}</h3>
+    <p [ngClass]="{'completed': task?.completed}">{{ task?.completed ? 'Completed' : 'Not Completed' }}</p>
+    <button (click)="toggleCompletion()">
+      {{ task?.completed ? 'Mark as Incomplete' : 'Mark as Complete' }}
+    </button>
+  </div>
+  
